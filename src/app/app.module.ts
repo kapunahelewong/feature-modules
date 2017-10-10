@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { CustomerDashboardModule } from './customer-dashboard/customer-dashboard.module';
+// import the feature module here so you can add it to the imports array below
 
 @NgModule({
   declarations: [
@@ -12,7 +14,8 @@ import { AppComponent } from './app.component';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    CustomerDashboardModule // add the feature module here
   ],
   providers: [],
   bootstrap: [AppComponent]
